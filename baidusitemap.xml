@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+  <url>
+    <loc>http://www.hanandjun.com/2016/11/08/adb-devices/</loc>
+    <lastmod>2016-11-17T14:04:04.486Z</lastmod>
+    <data>
+        <display>
+        <title>关于Ubuntu下运行adb devices命令出现??? no permissions的解决方法</title>
+        <pubTime>2016-11-08T12:25:22.000Z</pubTime>
+        
+        <tag>adb</tag>
+         
+         
+           
+             
+              <breadCrumb title="Android" url="http://www.hanandjun.com/categories/Android/"/>
+          
+             
+              <breadCrumb title="Ubuntu" url="http://www.hanandjun.com/categories/Android/Ubuntu/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://www.hanandjun.com/2016/11/12/bbb/</loc>
+    <lastmod>2016-11-14T14:37:50.918Z</lastmod>
+    <data>
+        <display>
+        <title>Big Buck Bunny</title>
+        <pubTime>2016-11-12T06:27:40.000Z</pubTime>
+        
+        <tag>动漫</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://www.hanandjun.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.hanandjun.com/2016/11/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/</loc>
+    <lastmod>2016-11-09T04:44:32.461Z</lastmod>
+    <data>
+        <display>
+        <title>第一篇博文</title>
+        <pubTime>2016-11-08T10:24:07.000Z</pubTime>
+        
+        <tag>新手上路</tag>
+         
+         
+           
+             
+              <breadCrumb title="生活" url="http://www.hanandjun.com/categories/%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+</urlset>

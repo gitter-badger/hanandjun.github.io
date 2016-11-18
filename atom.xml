@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hs&#39;s Blog|爱与痛的边缘</title>
+  <subtitle>欢迎来到我的个人站点～</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.hanandjun.com/"/>
+  <updated>2016-11-14T14:37:50.918Z</updated>
+  <id>http://www.hanandjun.com/</id>
+  
+  <author>
+    <name>hanandjun</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Big Buck Bunny</title>
+    <link href="http://www.hanandjun.com/2016/11/12/bbb/"/>
+    <id>http://www.hanandjun.com/2016/11/12/bbb/</id>
+    <published>2016-11-12T06:27:40.000Z</published>
+    <updated>2016-11-14T14:37:50.918Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Big-Buck-Bunny-大雄兔，超级英雄"><a href="#Big-Buck-Bunny-大雄兔，超级英雄" class="headerlink" title="Big Buck Bunny 大雄兔，超级英雄"></a>Big Buck Bunny 大雄兔，超级英雄</h2><p>也许你早已欣赏，但好的动漫作品值得分享</p>
+<a id="more"></a>
+<iframe height="320" width="510" src="http://player.youku.com/embed/XMTgxNjAwNjEzNg==" frameborder="0" 'allowfullscreen'=""></iframe>
+
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Big-Buck-Bunny-大雄兔，超级英雄&quot;&gt;&lt;a href=&quot;#Big-Buck-Bunny-大雄兔，超级英雄&quot; class=&quot;headerlink&quot; title=&quot;Big Buck Bunny 大雄兔，超级英雄&quot;&gt;&lt;/a&gt;Big Buck Bunny 大雄兔，超级英雄&lt;/h2&gt;&lt;p&gt;也许你早已欣赏，但好的动漫作品值得分享&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://www.hanandjun.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="动漫" scheme="http://www.hanandjun.com/tags/%E5%8A%A8%E6%BC%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Ubuntu下运行adb devices命令出现??? no permissions的解决方法</title>
+    <link href="http://www.hanandjun.com/2016/11/08/adb-devices/"/>
+    <id>http://www.hanandjun.com/2016/11/08/adb-devices/</id>
+    <published>2016-11-08T12:25:22.000Z</published>
+    <updated>2016-11-17T14:04:04.486Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简单短暂法"><a href="#简单短暂法" class="headerlink" title="简单短暂法"></a>简单短暂法</h3><blockquote>
+<p>网上很多人给出的办法是用sudo提高adb的运行权限。即</p>
+</blockquote>
+<pre><code>$ sudo adb kill-server
+$ adb devices
+</code></pre><p>这也可以解决问题。但终归不时一劳永逸的方法。<br><a id="more"></a></p>
+<h3 id="复杂持久法"><a href="#复杂持久法" class="headerlink" title="复杂持久法"></a>复杂持久法</h3><blockquote>
+<p>可以通过修改adb程序的所有者和权限来永久解决问题，切换到adb程序的目录，运行如下命令：</p>
+</blockquote>
+<pre><code>$ sudo chown root:root ./adb
+$ sudo chmod 4777 ./adb
+</code></pre><p>然后重启下adb服务就可以了</p>
+<pre><code>$ sudo ./adb kill-server
+$ sudo ./adb start-server
+$ sudo ./adb devices
+</code></pre><p>以后运行adb devices你就会发现，可以正确看到android设备了。<br>List of devices attached<br>xxxxxxxx device</p>
+<p><strong>提示:</strong>可利用which命令查找当前adb的路径</p>
+<pre><code>$ which adb
+</code></pre><p>fastboot 类似</p>
+<p><img src="/images/first/image2.jpg" alt=""></p>
+<p>图片来源：潘潘达</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;简单短暂法&quot;&gt;&lt;a href=&quot;#简单短暂法&quot; class=&quot;headerlink&quot; title=&quot;简单短暂法&quot;&gt;&lt;/a&gt;简单短暂法&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;网上很多人给出的办法是用sudo提高adb的运行权限。即&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;$ sudo adb kill-server
+$ adb devices
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这也可以解决问题。但终归不时一劳永逸的方法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://www.hanandjun.com/categories/Android/"/>
+    
+      <category term="Ubuntu" scheme="http://www.hanandjun.com/categories/Android/Ubuntu/"/>
+    
+    
+      <category term="adb" scheme="http://www.hanandjun.com/tags/adb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一篇博文</title>
+    <link href="http://www.hanandjun.com/2016/11/08/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87/"/>
+    <id>http://www.hanandjun.com/2016/11/08/第一篇博文/</id>
+    <published>2016-11-08T10:24:07.000Z</published>
+    <updated>2016-11-09T04:44:32.461Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="万事开头难"><a href="#万事开头难" class="headerlink" title="万事开头难"></a>万事开头难</h2><p>之前查阅资料，有很多都是在个人博客上，觉得很不错，尤其是看了我好友<a href="https://rxxy.github.io" target="_blank" rel="external">若兮相言的博客</a>,更是想搭建一个，于是这几天心血来潮，就动手弄了这么一个，新手上路，很多东西都不太懂，所以记录下来，以后更是要加油啊！<br><a id="more"></a></p>
+<h2 id="开始寻找创建博客的良好方案"><a href="#开始寻找创建博客的良好方案" class="headerlink" title="开始寻找创建博客的良好方案"></a>开始寻找创建博客的良好方案</h2><p>鉴于我好友等一票大佬们都是基于<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo</a>,我小试了一下感觉还不错，不过后来看了下<a href="http://jekyll.com.cn/" target="_blank" rel="external">jekyll</a>,就想先拿这个试下水，于是就搭建了起来，但是后期使用不太爽，就滚回了hexo，以及利用hext主题，成了现在的样子</p>
+<h2 id="用来干些什么呢"><a href="#用来干些什么呢" class="headerlink" title="用来干些什么呢"></a>用来干些什么呢</h2><blockquote>
+<p>记录生活上的事</p>
+</blockquote>
+<p>前几天和阔别已久的哥们儿聊天，他说他感觉越长大越孤单，找不到说话的人，我说那你更适合做个博客，找些有趣的事情去做并记录下来，比如之前学的弹吉他，等到以后回首，会发现生活虽然波折，但趣味也正蕴含其中</p>
+<blockquote>
+<p>记录学习上的事</p>
+</blockquote>
+<p>之前有些宝贵的学习资料临时放在硬盘里，但往往由于不知名的原因或者手贱，给rm掉，，悔恨不已，虽然可以恢复过来，但不想在做多余的功，这下好了，有了地方存放，还可以放些羞羞的东西，，heiheihei…</p>
+<h2 id="将来的计划"><a href="#将来的计划" class="headerlink" title="将来的计划"></a>将来的计划</h2><p>说到底，还是学好技术自己重头搭一个比较赞，虽然身处的环境不怎么样，学校处处有装逼现象发生，傻逼的导员，舍友每天打游戏，，，但是种种都阻挡不了我奋斗的心！！</p>
+<p>我是韩大侠，我为自己代言🔥 🔥 </p>
+<p><img src="/images/first/image1.jpg" alt=""></p>
+<p>图片来源：潘潘达</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;万事开头难&quot;&gt;&lt;a href=&quot;#万事开头难&quot; class=&quot;headerlink&quot; title=&quot;万事开头难&quot;&gt;&lt;/a&gt;万事开头难&lt;/h2&gt;&lt;p&gt;之前查阅资料，有很多都是在个人博客上，觉得很不错，尤其是看了我好友&lt;a href=&quot;https://rxxy.github.io&quot;&gt;若兮相言的博客&lt;/a&gt;,更是想搭建一个，于是这几天心血来潮，就动手弄了这么一个，新手上路，很多东西都不太懂，所以记录下来，以后更是要加油啊！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="生活" scheme="http://www.hanandjun.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="新手上路" scheme="http://www.hanandjun.com/tags/%E6%96%B0%E6%89%8B%E4%B8%8A%E8%B7%AF/"/>
+    
+  </entry>
+  
+</feed>
