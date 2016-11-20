@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.hanandjun.com/2016/11/20/sublime-text3/</loc>
+    
+    <lastmod>2016-11-20T04:32:50.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.hanandjun.com/2016/11/08/adb-devices/</loc>
+    
+    <lastmod>2016-11-20T04:28:27.126Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.hanandjun.com/about/index.html</loc>
     
     <lastmod>2016-11-19T08:00:46.278Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>http://www.hanandjun.com/categories/index.html</loc>
     
     <lastmod>2016-11-17T14:14:14.574Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.hanandjun.com/2016/11/08/adb-devices/</loc>
-    
-    <lastmod>2016-11-17T14:04:04.486Z</lastmod>
     
   </url>
   

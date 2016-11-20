@@ -3,13 +3,29 @@
 
 
     
-    
-    
-    
+  <url>
+    <loc>http://www.hanandjun.com/2016/11/20/sublime-text3/</loc>
+    <lastmod>2016-11-20T04:32:50.796Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu下捣鼓sublime_text3记</title>
+        <pubTime>2016-11-20T03:17:32.000Z</pubTime>
+        
+        <tag>sublime_text3</tag>
+         
+         
+           
+             
+              <breadCrumb title="Text Editor" url="http://www.hanandjun.com/categories/Text-Editor/"/>
+          
+        </display>
+    </data>
+    </url>
+
     
   <url>
     <loc>http://www.hanandjun.com/2016/11/08/adb-devices/</loc>
-    <lastmod>2016-11-17T14:04:04.486Z</lastmod>
+    <lastmod>2016-11-20T04:28:27.126Z</lastmod>
     <data>
         <display>
         <title>关于Ubuntu下运行adb devices命令出现??? no permissions的解决方法</title>
@@ -22,13 +38,14 @@
              
               <breadCrumb title="Android" url="http://www.hanandjun.com/categories/Android/"/>
           
-             
-              <breadCrumb title="Ubuntu" url="http://www.hanandjun.com/categories/Android/Ubuntu/"/>
-          
         </display>
     </data>
     </url>
 
+    
+    
+    
+    
     
   <url>
     <loc>http://www.hanandjun.com/2016/11/12/bbb/</loc>

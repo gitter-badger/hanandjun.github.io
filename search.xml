@@ -3,6 +3,13 @@
   
     
     <entry>
+      <title><![CDATA[ubuntu下捣鼓sublime_text3记]]></title>
+      <url>%2F2016%2F11%2F20%2Fsublime-text3%2F</url>
+      <content type="text"><![CDATA[今天捣鼓了下sublime_text3，在ubuntu下还是有点意思的，所以做个记录： 下载安装首先，从sublime_text3官网获取sublime_text3的安装包，我下载的是目前最新3126版本 然后使用dpkg命令或者gdeb安装器安装即可 注册好的东西都是要money的，ST3当然不例外，但是我作为一名学生党，空有一颗支持正版的心，但是没有支持的钱啊，所以搜索了一下，找到了注册码 —– BEGIN LICENSE —– Michael Barnes Single User License EA7E-821385 8A353C41 872A0D5C DF9B2950 AFF6F667 C458EA6D 8EA3C286 98D1D650 131A97AB AA919AEC EF20E143 B361B1E7 4C8B7F04 B085E65E 2F5F5360 8489D422 FB8FC1AA 93F6323C FD7F7544 3F39C318 D95E6480 FCCC7561 8A4A1741 68FA4223 ADCEDE07 200C25BE DBBC4855 C4CFB774 C5EC138C 0FEC1CEF D9DCECEC D3A5DAD1 01316C36 —— END LICENSE —— 运气比较好，注册是OK的 中文显示之所以要搞中文，纯粹是因为自己的洋文道行不够！-_- (所以英语四六级还是要好好学的)这个其实只要安装一个packages即可，这个包呢，具体可看st3-zh_CN,然后从releases下载最新的Default.sublime-package，然后把它移动到/home/xx/.config/sublime-text-3/Installed Packages下就阔以啦~(≧▽≦)/~ 中文输入问题这个是真的蛋疼的地方，其他的工具也没这个毛病，这个神器却出了问题，所以修改它直到ok 1,下载共享库libsublime-imfix.so 从我的github下载libsublime-imfix.so共享库 2,将libsublime-imfix.so拷贝到sublime_text所在文件夹 $ sudo mv libsublime-imfix.so /opt/sublime_text/ 3,修改文件/usr/bin/subl的内容 $ sudo gedit /usr/bin/subl 将 #!/bin/shexec /opt/sublime_text/sublime_text &quot;$@&quot; 修改为 #!/bin/shLD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text &quot;$@&quot; 此时，在命令中执行 subl 将可以使用搜狗for linux的中文输入 4,鼠标右键打开文件使用中文输入,需要修改文件sublime_text.desktop的内容 $ sudo gedit /usr/share/applications/sublime_text.desktop a.将[Desktop Entry]中的字符串 Exec=/opt/sublime_text/sublime_text %F 修改为 Exec=bash -c &quot;LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text %F&quot; b.将[Desktop Action Window]中的字符串 Exec=/opt/sublime_text/sublime_text -n 修改为 Exec=bash -c &quot;LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text -n&quot; c.将[Desktop Action Document]中的字符串 Exec=/opt/sublime_text/sublime_text --command new_file 修改为 Exec=bash -c &quot;LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so exec /opt/sublime_text/sublime_text --command new_file&quot; d.把/usr/share/applications/sublime-text.desktop文件复制到opt/sublime_text/目录下： $ sudo cp /usr/share/applications/sublime_text.desktop /opt/sublime_text/ 修改权限 $ sudo chmod 777 sublime_text.desktop 这样右键菜单打开的文件就可以正常使用中文输入法了 5,dash和启动器打开后输入中文 $ cd ~/.local/share/applications/ $ sudo gedit sublime_text.desktop 按照第4步的修改，或者直接把已经修改好的复制到~/.local/share/applications/下 enjoy it! 未完待续…]]></content>
+    </entry>
+
+    
+    <entry>
       <title><![CDATA[Big Buck Bunny]]></title>
       <url>%2F2016%2F11%2F12%2Fbbb%2F</url>
       <content type="text"><![CDATA[Big Buck Bunny 大雄兔，超级英雄也许你早已欣赏，但好的动漫作品值得分享]]></content>

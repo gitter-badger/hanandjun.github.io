@@ -103,7 +103,7 @@ $ sudo adb kill-server
 $ adb devices
 这也可以解决问题。但终归不时一劳永逸的方法。">
 <meta property="og:image" content="http://www.hanandjun.com/images/first/image2.jpg">
-<meta property="og:updated_time" content="2016-11-17T14:04:04.486Z">
+<meta property="og:updated_time" content="2016-11-20T04:28:27.126Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于Ubuntu下运行adb devices命令出现??? no permissions的解决方法">
 <meta name="twitter:description" content="简单短暂法
@@ -373,17 +373,6 @@ $ adb devices
 
                 
                 
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Android/Ubuntu/" itemprop="url" rel="index">
-                    <span itemprop="name">Ubuntu</span>
-                  </a>
-                </span>
-
-                
-                
               
             </span>
           
@@ -428,13 +417,13 @@ $ adb devices
       
 
       
-        <h3 id="简单短暂法"><a href="#简单短暂法" class="headerlink" title="简单短暂法"></a>简单短暂法</h3><blockquote>
+        <h2 id="简单短暂法"><a href="#简单短暂法" class="headerlink" title="简单短暂法"></a>简单短暂法</h2><blockquote>
 <p>网上很多人给出的办法是用sudo提高adb的运行权限。即</p>
 </blockquote>
 <pre><code>$ sudo adb kill-server
 $ adb devices
 </code></pre><p>这也可以解决问题。但终归不时一劳永逸的方法。<br><a id="more"></a></p>
-<h3 id="复杂持久法"><a href="#复杂持久法" class="headerlink" title="复杂持久法"></a>复杂持久法</h3><blockquote>
+<h2 id="复杂持久法"><a href="#复杂持久法" class="headerlink" title="复杂持久法"></a>复杂持久法</h2><blockquote>
 <p>可以通过修改adb程序的所有者和权限来永久解决问题，切换到adb程序的目录，运行如下命令：</p>
 </blockquote>
 <pre><code>$ sudo chown root:root ./adb
@@ -629,7 +618,7 @@ $ sudo ./adb devices
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -646,7 +635,7 @@ $ sudo ./adb devices
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -735,7 +724,7 @@ $ sudo ./adb devices
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简单短暂法"><span class="nav-number">1.</span> <span class="nav-text">简单短暂法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂持久法"><span class="nav-number">2.</span> <span class="nav-text">复杂持久法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简单短暂法"><span class="nav-number">1.</span> <span class="nav-text">简单短暂法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#复杂持久法"><span class="nav-number">2.</span> <span class="nav-text">复杂持久法</span></a></li></ol></div>
             
 
           </div>
